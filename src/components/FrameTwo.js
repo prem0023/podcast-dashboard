@@ -1,5 +1,3 @@
-import React from "react";
-
 const FrameTwo = () => {
   return (
     <div className="z-30 w-full h-2/3 mt-[25%] pl-[15%] pr-[5%] flex relative">

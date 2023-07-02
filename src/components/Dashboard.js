@@ -1,4 +1,3 @@
-import React from "react";
 import FrameEightySeven from "./FrameEightySeven";
 import FrameEightySix from "./FrameEightySix";
 import FrameSeventyEight from "./FrameSeventyEight";

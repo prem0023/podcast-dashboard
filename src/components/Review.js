@@ -1,4 +1,3 @@
-import React from "react";
 import Lolla from "../utils/Lolla.png";
 
 const Review = () => {

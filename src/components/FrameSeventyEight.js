@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Plan from "./Plan";
 import linePattern from "../utils/linePattern.png";
 import podcast from "../utils/podcast.jpg";

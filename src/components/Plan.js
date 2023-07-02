@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 const Plan = ({ plan, flag, setFlag, elemRef, priceRef, buttonRef }) => {
   return (
     <div className="w-full h-full mx-[3%] bg-white relative">

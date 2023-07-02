@@ -1,4 +1,3 @@
-import React from "react";
 import facebook from "../utils/facebook.jpg";
 import youtube from "../utils/youtube.jpg";
 import instagram from "../utils/instagram.jpg";

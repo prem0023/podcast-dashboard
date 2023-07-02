@@ -1,4 +1,3 @@
-import React from "react";
 import stellite from "../utils/stellite.jpg";
 import groupOne from "../utils/groupOne.jpg";
 

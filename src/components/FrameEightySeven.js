@@ -1,6 +1,3 @@
-import React from "react";
-import FrameEightyEight from "./FrameEightyEight";
-
 const FrameEightySeven = () => {
   return (
     <>

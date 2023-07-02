@@ -1,4 +1,3 @@
-import React from "react";
 import everyoneSmiling from "../utils/everyone-is-smiling-listens-group-people-business-conference-modern-classroom-daytime 1.png";
 import groupBusiness from "../utils/group-business-workers-smiling-happy-confident-working-together-with-smile-face-applauding-one-them-office 1.jpg";
 import group from "../utils/Group.png";
