@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import Plan from "./Plan";
-// import LinePattern from "../utils/LinePattern.png";
+import linePattern from "../utils/linePattern.png";
+import podcast from "../utils/podcast.jpg";
 
 const FrameSeventyEight = () => {
   const [flagFirstPlan, setFlagFirstPlan] = useState(false);
@@ -99,63 +100,81 @@ const FrameSeventyEight = () => {
   };
 
   return (
-    <div className="px-[10%] w-full z-20 relative">
-      <div className="py-[7%] relative">
-        <div className=" flex justify-center sm:text-lg md:text-xl lg:text-3xl xl:text-4xl font-bold">
-          Choose your plan
-        </div>
-        <div className="flex justify-center w-full">
-          <div className="w-2/5 py-[3%] text-center  text-xs md:text-sm lg:text-base">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
+    <div className="w-full z-20 relative">
+      <div className="px-[10%] ">
+        <div className="py-[7%] relative">
+          <div className=" flex justify-center sm:text-lg md:text-xl lg:text-3xl xl:text-4xl font-bold">
+            Choose your plan
           </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="cursor-pointer p-2 shadow justify-center items-center gap-2.5 inline-flex">
-            <div
-              className="text-center px-3 py-1 rounded-lg text-sm "
-              ref={monthlyRef}
-              onClick={changeMonthlyBackgroundColor}
-            >
-              monthly
-            </div>
-            <div
-              className="text-center px-3 py-1 rounded-lg text-sm "
-              ref={yearlyRef}
-              onClick={changeYearlyBackgroundColor}
-            >
-              yearly
+          <div className="flex justify-center w-full">
+            <div className="w-2/5 py-[3%] text-center  text-xs md:text-sm lg:text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's
             </div>
           </div>
+          <div className="flex justify-center">
+            <div className="cursor-pointer p-2 shadow justify-center items-center gap-2.5 inline-flex">
+              <div
+                className="text-center px-3 py-1 rounded-lg text-sm "
+                ref={monthlyRef}
+                onClick={changeMonthlyBackgroundColor}
+              >
+                monthly
+              </div>
+              <div
+                className="text-center px-3 py-1 rounded-lg text-sm "
+                ref={yearlyRef}
+                onClick={changeYearlyBackgroundColor}
+              >
+                yearly
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="flex w-full ">
-        <Plan
-          plan={"Basic Plan"}
-          flag={flagFirstPlan}
-          setFlag={setFlagFirstPlan}
-          elemRef={firstElemRef}
-          priceRef={firstPriceRef}
-          buttonRef={firstButtonRef}
-        />
-        <Plan
-          plan={"Premium Plan"}
-          flag={flagSecPlan}
-          setFlag={setFlagSecPlan}
-          elemRef={secElemRef}
-          priceRef={secPriceRef}
-          buttonRef={secButtonRef}
-        />
-        <Plan
-          plan={"Basic Plan"}
-          flag={flagThirdPlan}
-          setFlag={setFlagThirdPlan}
-          elemRef={thirdElemRef}
-          priceRef={thirdPriceRef}
-          buttonRef={thirdButtonRef}
-        />
+        <div className="flex w-full ">
+          <Plan
+            plan={"Basic Plan"}
+            flag={flagFirstPlan}
+            setFlag={setFlagFirstPlan}
+            elemRef={firstElemRef}
+            priceRef={firstPriceRef}
+            buttonRef={firstButtonRef}
+          />
+          <Plan
+            plan={"Premium Plan"}
+            flag={flagSecPlan}
+            setFlag={setFlagSecPlan}
+            elemRef={secElemRef}
+            priceRef={secPriceRef}
+            buttonRef={secButtonRef}
+          />
+          <Plan
+            plan={"Basic Plan"}
+            flag={flagThirdPlan}
+            setFlag={setFlagThirdPlan}
+            elemRef={thirdElemRef}
+            priceRef={thirdPriceRef}
+            buttonRef={thirdButtonRef}
+          />
+        </div>
       </div>
+      <img
+        className="absolute -z-10 top-56 right-0"
+        src={podcast}
+        style={{
+          width: "40%",
+          height: "auto",
+        }}
+      />
+      <img
+        className="absolute -z-10 bottom-20"
+        src={linePattern}
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      />
     </div>
   );
 };

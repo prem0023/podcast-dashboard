@@ -3,11 +3,12 @@ import facebook from "../utils/facebook.jpg";
 import youtube from "../utils/youtube.jpg";
 import instagram from "../utils/instagram.jpg";
 import twitter from "../utils/twitter.jpg";
+import imgBottom from "../utils/imgBottom.jpg";
 
 const FrameEightyEight = () => {
   return (
-    <div className="px-[10%] mt-[15%] relative">
-      <div className=" border-t py-5 w-full border-t-white justify-center items-center inline-flex ">
+    <div className=" mt-[15%] relative">
+      <div className="px-[10%] border-t py-5 w-full border-t-white justify-center items-center inline-flex ">
         <div className="flex w-full  px-[4%] items-center justify-between">
           <div className="text-[5px] sm:text-[6px] md:text-[8px] lg:text-xs xl:text-sm">
             All Right Reserved @Copyright 2023
@@ -49,6 +50,14 @@ const FrameEightyEight = () => {
           </div>
         </div>
       </div>
+      <img
+        className="absolute -z-10 bottom-0"
+        src={imgBottom}
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      />
     </div>
   );
 };

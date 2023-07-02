@@ -6,7 +6,7 @@ import vector from "../utils/Vector.png";
 
 const FrameThree = () => {
   return (
-    <div className="w-full mt-[5%] px-[10%] md:flex-row flex relative">
+    <div className="w-full mt-[5%] px-[10%] flex relative">
       <div className="w-1/2  relative">
         <div className="w-full left-0 top-0 relative">
           <div className="w-full left-0 top-0 relative text-white text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
@@ -91,13 +91,6 @@ const FrameThree = () => {
               <img className=" relative" src={vector} />
             </div>
           </div>
-
-          {/* <div className="w-full ">
-            <img
-              className="w-[10%] h-[8%] p-1 bottom-[73%] left-[107%] absolute origin-top-left rotate-[-16.83deg] bg-white rounded shadow flex-col justify-center items-center gap-2.5 inline-flex"
-              src={vector}
-            />
-          </div> */}
         </div>
       </div>
     </div>
